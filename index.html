@@ -18,7 +18,7 @@
   <meta name="author" content="">
 
   <title>WeParking - A melhor forma de estacionar, o melhor jeito de usar seu estacionamento.</title>
-
+  <link rel="icon" href="img/favicon.png" type="imagem/png">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -98,15 +98,13 @@
   <section class="cta" id="about">
     <div class="cta-content">
       <div class="container">
-        <h2>Problema</h2>
-        <h3 class="text-white">O aumento de carros no Brasil e no mundo tem aumentado cada vez mais, por consequência, a dificuldade de encontrar uma vaga pública disponível e o custo com os
+        <h2 class="text-white">WeParking</h2>
+        <p class="text-intro">O aumento de carros no Brasil e no mundo tem aumentado cada vez mais, por consequência, a dificuldade de encontrar uma vaga pública disponível e o custo com os
            os estacionamentos privados tem se tornado cada vez mais altos.
-        </h3>
-        <h2>Solução!</h2>
-        <h3 class="text-white">Como solução o <a href="#page-top">WeParking</a> oferece como solução um sistema onde você pode alugar uma vaga em um local seguro, ao mesmo tempo em que um morador 
-          de uma condôminio ou prédio empresarial que possua uma vaga disponível ou até mesmo que sua vaga fique disponível durante um periodo de tempo, possa alugar a sua vaga e aumentar
-          a sua renda mensal.
-        </a></h3>
+        </p>
+        <p class="text-intro">Com o <a href="#page-top">WeParking</a>, você pode alugar uma vaga em um local seguro e também disponibilizar a sua vaga paga aluguel sendo de um prédio empresarial, 
+          condomínio ou até mesmo a garagem da sua casa, permitindo assim uma renda extra e facilidade para a sua vida.
+        </p>
         <a href="#features" class="btn btn-outline btn-xl js-scroll-trigger">O App</a>
       </div>
     </div>
@@ -143,14 +141,14 @@
                 <div class="feature-item">
                   <i class="icon-location-pin text-primary"></i>
                   <h3 class="text-white">Vagas disponíveis</h3>
-                  <p class="text-white">Visualize no App o mapa com todas as vagas disponíveis perto do seu destino!</p>
+                  <p class="text-white">Visualize no mapa as vagas disponíveis próximas ao seu destino.</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
                   <i class="icon-screen-smartphone text-primary"></i>
                   <h3 class="text-white">Alugue sua vaga</h3>
-                  <p class="text-white">Realize o alguem de sua vaga diretamente pelo App!</p>
+                  <p class="text-white">Realize o aluguel diretamente pelo app.</p>
                 </div>
               </div>
             </div>
@@ -277,8 +275,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
-          <h2 class="section-heading text-white">Em breve, para todos!</h2>
-          <p class="text-white">Nosso aplicativo estará disponível para todas as plataformas!</p>
+          <h2 class="section-heading text-white">Em breve, para você!</h2>
+          <p class="text-white">Disponível em todas as plataformas.</p>
           <div class="badges">
             <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
             <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
@@ -295,13 +293,13 @@
       <div class="row">
         <div class="col-md-9 col-lg-8 mx-auto">
           <h2>Cadastre seu e-mail para receber atualizações</h2>
-          <form>
+          <form class="form" method="POST" action="register.php">
             <div class="form-label-group">
-              <input type="text" id="nome" class="form-control" placeholder="Nome Completo" required>
+              <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome Completo" required>
             </div>
             <br>
             <div class="form-label-group">
-              <input type="email" id="email" class="form-control" placeholder="exemplo@gmail.com" required>
+              <input type="email" name="email" id="email" class="form-control" placeholder="exemplo@gmail.com" required>
             </div>
             <br>
             <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">Cadastrar</button>
