@@ -293,13 +293,13 @@
       <div class="row">
         <div class="col-md-9 col-lg-8 mx-auto">
           <h2>Cadastre seu e-mail para receber atualizações</h2>
-          <form>
+          <form class="form" method="POST" action="register.php">
             <div class="form-label-group">
-              <input type="text" id="nome" class="form-control" placeholder="Nome Completo" required>
+              <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome Completo" required>
             </div>
             <br>
             <div class="form-label-group">
-              <input type="email" id="email" class="form-control" placeholder="exemplo@gmail.com" required>
+              <input type="email" name="email" id="email" class="form-control" placeholder="exemplo@gmail.com" required>
             </div>
             <br>
             <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">Cadastrar</button>
