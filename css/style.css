@@ -258,9 +258,16 @@ section.prototipo {
 
 section.prototipo h1 {
     font-size: 2.5rem;
+    font-weight: 300;
+    padding: 30px;
 }
 
 section.prototipo iframe {
-    width: 100%;
-    height: 100%
+    height: 500px;
+    padding: 10px 0;
+}
+
+section.prototipo p {
+    font-size: 0.8rem;
+    padding: 30px 30px;
 }
