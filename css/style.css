@@ -226,6 +226,7 @@ section.app .icons i {
 }
 
 section.app .icons h1 {
+    font-weight: 300;
     font-size: 2.5rem;
     margin: 10px;
 }
