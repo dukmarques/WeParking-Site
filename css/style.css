@@ -32,7 +32,7 @@ a {
 /*Geral*/
 body {
     width: 100%;
-    background: url(../img/bg-pattern.png) repeat center center, linear-gradient(to right, #665fee, #27c2de);
+    background: url(../img/bg-pattern.png) repeat center center, linear-gradient(to right, #24C6DC, #514A9D);
 }
 
 /*Header ---------------------------------*/
@@ -271,3 +271,40 @@ section.prototipo p {
     font-size: 0.8rem;
     padding: 30px 30px;
 }
+
+/*Download ---------------------------------*/
+section.download {
+    background-image: url(../img/parking3.jpg);
+    background-size: cover;
+    color: #FFF;
+    text-align: center;
+    padding: 40px auto;
+}
+
+section.download h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 20px;
+}
+
+section.download p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 20px;
+}
+
+section.download .plataformas {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+section.download .plataformas a {
+    margin: 10px;
+}
+
+section.download .plataformas a img {
+    width: 250px;
+}
+
+/*Newsletter ------------------------------*/
