@@ -308,3 +308,48 @@ section.download .plataformas a img {
 }
 
 /*Newsletter ------------------------------*/
+section.newsletter {
+    margin: 50px auto;
+    text-align: center;
+    color: #FFF;
+}
+
+section.newsletter h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 20px;
+}
+
+section.newsletter form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+section.newsletter form input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+section.newsletter form input[type="submit"] {
+    color: #FFF;
+    font-size: 1.2rem;
+    background: #665fee;
+    border: 1px solid #FFF;
+}
+
+/*Footer ---------------------------------*/
+footer {
+    height: 40px;
+    text-align: center;
+    color: #CCC;
+    background: #000;
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    line-height: 40px;
+}
