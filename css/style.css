@@ -35,6 +35,10 @@ body {
     background: url(../img/bg-pattern.png) repeat center center, linear-gradient(to right, #24C6DC, #514A9D);
 }
 
+.container {
+
+}
+
 /*Header ---------------------------------*/
 header {
     width: 100%;
@@ -75,12 +79,12 @@ header .content-header .menu i {
     margin-left: 5px;
 }
 
-header .dropdown {
+header nav.dropdown {
     width: 100%;
     display: none;
 
     position: fixed;
-    top: 0;
+    top: 59;
     left: 0;
 
     background: rgba(255, 255, 255, 0.9);
@@ -120,6 +124,13 @@ header .banner {
     margin: 59px 0px;
 }
 
+header .banner .content-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 header .banner h1 {
     font-weight: 300;
     font-size: 3rem;
@@ -141,10 +152,11 @@ header .banner a {
     border: 1px solid #FFF;
     border-radius: 10px;
     margin-bottom: 30px;
+    width: 35%;
 }
 
 header .banner img {
-    width: 80%;
+    width: 325px;
     margin-bottom: 30px;
 }
 
@@ -162,6 +174,13 @@ main {
     justify-content: center;
     text-align: center;
     padding: 30px;
+}
+
+main .content-sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main h1 {
@@ -187,6 +206,7 @@ main p span {
 }
 
 main a {
+    width: 30%;
     margin: 15px;
     padding: 10px 20px;
     color: #665fee;
@@ -199,9 +219,9 @@ main a {
 
 section.app {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #FFF;
     text-align: center;
     margin: 30px 0px;
@@ -219,8 +239,15 @@ section.app .sub-titulo {
     margin: 20px;
 }
 
+
+section.app .app-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
 section.app img {
-    width: 80%;
+    width: 325px;
 }
 
 section.app .icons {
@@ -229,17 +256,17 @@ section.app .icons {
 }
 
 section.app .icons i {
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 section.app .icons h1 {
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 10px;
 }
 
 section.app .icons p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 10px;
 }
 
@@ -278,7 +305,7 @@ section.download {
     background-size: cover;
     color: #FFF;
     text-align: center;
-    padding: 40px auto;
+    padding: 80px auto;
 }
 
 section.download h1 {
@@ -309,6 +336,10 @@ section.download .plataformas a img {
 
 /*Newsletter ------------------------------*/
 section.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 50px auto;
     text-align: center;
     color: #FFF;
@@ -321,8 +352,12 @@ section.newsletter h1 {
 }
 
 section.newsletter form {
+    width: 100%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -331,6 +366,7 @@ section.newsletter form input {
     margin: 5px;
     border-radius: 5px;
     border: none;
+    width: 85%;
 }
 
 section.newsletter form input[type="submit"] {
@@ -352,4 +388,146 @@ footer p {
     font-size: 0.8rem;
     font-weight: 300;
     line-height: 40px;
+}
+
+/*Medias Querys ------------------------------*/
+
+@media (min-width: 700px) {
+
+    header .banner .content-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.app .app-features {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    section.app img {
+        grid-row: span 2;
+    }
+
+    section.app .last-icon-grid {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header .logo-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #FFF;
+    }
+    
+    header .container-logo-menu {
+        display: flex;
+        background: #FFF;
+        justify-content: space-around;
+        width: 60%;
+    }
+
+    header .content-header {
+        width: 100%;
+        position: relative;
+        grid-row: 1;
+        z-index: 0;
+    }
+
+    header .content-header .menu {
+        display: none;
+    }
+
+    header nav.dropdown {
+        grid-column: span 2;
+        display: block;
+        position: relative;
+        z-index: 0;
+        background: #FFF;
+        height: 59px;
+        border-radius: 0;
+    }
+    
+    header nav ul {
+        text-align: center;
+        display: flex;
+    }
+    
+    header nav ul li a {
+        font-size: 0.7rem;
+        line-height: 30px;
+    }
+
+    header .banner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "img text";
+    }
+    
+    header .banner .content-banner {
+        grid-area: text;
+        justify-self: start;
+        width: 70%;
+    }
+    
+    header .banner p {
+    }
+    
+    header .banner a {
+        width: 50%;
+        max-width: 180px;
+    }
+    
+    header .banner img {
+        grid-area: img;
+        align-self: center;
+        justify-self: end;
+        margin-right: 30px;
+    }
+
+    section.app .icons i {
+        font-size: 4rem;
+    }
+
+    section.app .icons h1 {
+        font-size: 2rem;
+        margin: 5px;
+    }
+    
+    section.app .icons p {
+        font-size: 1.3rem;
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    main {
+        height: 700px;
+    }
+
+    section.app .app-features {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    section.app img {
+        grid-row: span 3;
+    }
+
+    section.app .last-icon-grid {
+        grid-column: span 2;
+    }
 }

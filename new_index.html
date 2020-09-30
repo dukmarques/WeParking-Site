@@ -12,45 +12,53 @@
     <title>WeParking</title>
 </head>
 <body>
-    <header>
-        <div class="content-header">
-            <a href="" class="logo">WeParking</a>
-            <a href="#dropdown" class="menu">Menu <i class="fas fa-bars"></i></a>
+    <header id="header">
+        <div class="logo-menu">
+            <div class="container-logo-menu">
+                <div class="content-header container">
+                    <a href="#header" class="logo">WeParking</a>
+                    <a href="#dropdown" class="menu">Menu <i class="fas fa-bars"></i></a>
+                </div>
+                <nav class="dropdown" id="dropdown">
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#app-motoristas">motoristas</a></li>
+                        <li><a href="#app-donos">Vagas</a></li>
+                        <li><a href="#prototipo">Protótipo</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav class="dropdown" id="dropdown">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#app-motoristas">motoristas</a></li>
-                <li><a href="#app-donos">Donos de Vagas</a></li>
-                <li><a href="#prototipo">Protótipo</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-            </ul>
-        </nav>
 
         <div class="banner">
-            <h1>WeParking</h1>
-            <p>A melhor forma de estacionar, 
-                o melhor jeito de usar o seu
-                 estacionamento!</p>
-            <a href="#sobre">Saiba mais</a>
+            <div class="content-banner">
+                <h1>WeParking</h1>
+                <p>A melhor forma de estacionar, 
+                    o melhor jeito de usar o seu
+                     estacionamento!</p>
+                <a href="#sobre">Saiba mais</a>
+            </div>
             <img src="img/tela_principal_iphone.png" alt="">
         </div>
     </header>
 
     <main id="sobre">
-        <h1>WeParking</h1>
-        <p>O número de carros no Brasil e no mundo tem aumentado cada vez mais, 
-            por consequência, a dificuldade em encontrar uma vaga de 
-            estacionamento pública disponível e o custo com os estacionamentos 
-            privados tem se tornado cada vez mais altos.</p>
-        <p>Com o <span>WeParking</span>, você pode alugar uma vaga em um local seguro e 
-            também disponibilizar a sua vaga para aluguel, sendo ela uma 
-            vaga de um prédio empresarial, condomínio ou até mesmo a garagem 
-            da sua casa, permitindo assim uma renda extra e facilidade para a 
-            sua vida.</p>
-
-        <a href="#app-motoristas">O App</a>
+        <div class="content-sobre container">
+            <h1>WeParking</h1>
+            <p>O número de carros no Brasil e no mundo tem aumentado cada vez mais, 
+                por consequência, a dificuldade em encontrar uma vaga de 
+                estacionamento pública disponível e o custo com os estacionamentos 
+                privados tem se tornado cada vez mais altos.</p>
+            <p>Com o <span>WeParking</span>, você pode alugar uma vaga em um local seguro e 
+                também disponibilizar a sua vaga para aluguel, sendo ela uma 
+                vaga de um prédio empresarial, condomínio ou até mesmo a garagem 
+                da sua casa, permitindo assim uma renda extra e facilidade para a 
+                sua vida.</p>
+    
+            <a href="#app-motoristas">O App</a>
+        </div>
     </main>
 
     <section class="app" id="app-motoristas">
@@ -59,42 +67,44 @@
         
         <p class="sub-titulo">Uma forma segura, prática e barata de estacionar o seu veículo!</p>
         
-        <img class="app-img" src="img/tela_motoristas_iphone.png" alt="">
-        
-        <div class="icons">
-            <i class="fas fa-map-marker-alt"></i>
-            <h1>Vagas disponíveis</h1>
-            <p>Visualize no mapa as vagas disponíveis próximas ao seu destino.</p>
-        </div>
-
-        <div class="icons">
-            <i class="fas fa-mobile-alt"></i>
-            <h1>Alugue sua vaga</h1>
-            <p>Realize o aluguel diretamente pelo app.</p>
-        </div>
-
-        <div class="icons">
-            <i class="far fa-clock"></i>
-            <h1>Histórico</h1>
-            <p>Visualize o histórico de vagas que você ocupou.</p>
-        </div>
-
-        <div class="icons">
-            <i class="fas fa-list-ul"></i>
-            <h1>Filtre as vagas</h1>
-            <p>Selecione os tipos de vagas que deseja!</p>
-        </div>
-
-        <div class="icons">
-            <i class="far fa-star"></i>
-            <h1>Sistema de avaliação</h1>
-            <p>Avalie e veja a avaliação de todas as vagas.</p>
-        </div>
-
-        <div class="icons">
-            <i class="fas fa-tag"></i>
-            <h1>Ganhe cupons!</h1>
-            <p>Utilize cupons para ganhar ótimos descontos!</p>
+        <div class="app-features container">
+            <img class="app-img" src="img/tela_motoristas_iphone.png" alt="">
+            
+            <div class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <h1>Vagas disponíveis</h1>
+                <p>Visualize no mapa as vagas disponíveis próximas ao seu destino.</p>
+            </div>
+    
+            <div class="icons">
+                <i class="fas fa-mobile-alt"></i>
+                <h1>Alugue sua vaga</h1>
+                <p>Realize o aluguel diretamente pelo app.</p>
+            </div>
+    
+            <div class="icons">
+                <i class="far fa-clock"></i>
+                <h1>Histórico</h1>
+                <p>Visualize o histórico de vagas que você ocupou.</p>
+            </div>
+    
+            <div class="icons">
+                <i class="fas fa-list-ul"></i>
+                <h1>Filtre as vagas</h1>
+                <p>Selecione os tipos de vagas que deseja!</p>
+            </div>
+    
+            <div class="icons">
+                <i class="far fa-star"></i>
+                <h1>Sistema de avaliação</h1>
+                <p>Avalie e veja a avaliação de todas as vagas.</p>
+            </div>
+    
+            <div class="icons">
+                <i class="fas fa-tag"></i>
+                <h1>Ganhe cupons!</h1>
+                <p>Utilize cupons para ganhar ótimos descontos!</p>
+            </div>
         </div>
 
         <hr>
@@ -106,36 +116,38 @@
         
         <p class="sub-titulo">Melhor forma de usar sua vaga vazia!</p>
         
-        <img class="app-img" src="img/tela_dono_vaga_iphone.png" alt="">
-
-        <div class="icons">
-            <i class="fas fa-wallet"></i>
-            <h1>Ganhe</h1>
-            <p>Utilize o tempo disponível da sua vaga para aumentar a sua renda.</p>
-        </div>
-
-        <div class="icons">
-            <i class="far fa-edit"></i>
-            <h1>Cadastro de vaga</h1>
-            <p>Visualize o histórico de vagas que você ocupou.</p>
-        </div>
-
-        <div class="icons">
-            <i class="far fa-comment-alt"></i>
-            <h1>Negocie sua vaga</h1>
-            <p>Converse diretamente com o motorista para alugar a sua vaga.</p>
-        </div>
-
-        <div class="icons">
-            <i class="fas fa-gamepad"></i>
-            <h1>Tenha o controle</h1>
-            <p>Controle quando sua vaga estará disponível!</p>
-        </div>
-
-        <div class="icons">
-            <i class="far fa-bell"></i>
-            <h1>Alerta</h1>
-            <p>Saiba quando sua vaga for ocupada ou desocupada!</p>
+        <div class="app-features container">
+            <img class="app-img" src="img/tela_dono_vaga_iphone.png" alt="">
+    
+            <div class="icons">
+                <i class="fas fa-wallet"></i>
+                <h1>Ganhe</h1>
+                <p>Utilize o tempo disponível da sua vaga para aumentar a sua renda.</p>
+            </div>
+    
+            <div class="icons">
+                <i class="far fa-edit"></i>
+                <h1>Cadastro de vaga</h1>
+                <p>Visualize o histórico de vagas que você ocupou.</p>
+            </div>
+    
+            <div class="icons">
+                <i class="far fa-comment-alt"></i>
+                <h1>Negocie sua vaga</h1>
+                <p>Converse diretamente com o motorista para alugar a sua vaga.</p>
+            </div>
+    
+            <div class="icons">
+                <i class="fas fa-gamepad"></i>
+                <h1>Tenha o controle</h1>
+                <p>Controle quando sua vaga estará disponível!</p>
+            </div>
+    
+            <div class="icons last-icon-grid">
+                <i class="far fa-bell"></i>
+                <h1>Alerta</h1>
+                <p>Saiba quando sua vaga for ocupada ou desocupada!</p>
+            </div>
         </div>
 
         <hr>
