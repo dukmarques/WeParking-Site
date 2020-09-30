@@ -51,7 +51,7 @@ header .content-header {
     padding: 20px;
     background: #FFF;
 
-    z-index: 2;
+    z-index: 10;
 }
 
 header .content-header .logo {
@@ -80,6 +80,8 @@ nav.dropdown {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 0 0 15px 15px;
     transition: all 1s;
+
+    z-index: 1;
 }
 
 nav.dropdown:target {
